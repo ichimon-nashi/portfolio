@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi! I'm Eric!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!-- hamburger icon -->
+            <div class="hamburger-icon"><i class="fa fa-bars"></i></div>
+            <ul id="nav-list" class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link bold white">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link bold white">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link bold white">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link bold white">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="portfolio-section">
+        <div class="container">
+            <h1>Hi! I'm <span class="purple">Eric!</span></h1>
+            <h1>I'm a <span class="blue">Flight Purser</span> turned <span class="orange">Front-end Developer</span></h1>
+            <p>I'm passionate in designing interactive websites and like collaborating with others. Let's work together!</p>
+            <div class="learn-more-container">
+                <a href="#about" class="hover-link"><i class="fas fa-chevron-down"></i>More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-heading">About me</h2>
+            <div class="profile-outer-container">
+                <div class="profile-pic-container">
+                    <img src="./images/eric_profile_pic.png" alt="Profile Pic" class="profile-pic">
+                </div>
+                <div class="profile-text-container">
+                    <p>Having spent a decade in the aviation sector, I felt I wasn't doing enough with my life until I was introduced into the wonderful world of coding. I loved it, as it not only challenged my problem solving skills, creativity and attention to detail, but the rapid progression in technology keeps me on my toes to never stop learning!</p>
+                    <p>When not coding, I'm either off traveling the world in search of delicious food 🍕 or sculpting/model-making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="portfolio-section">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-heading">Projects</h2>
+                <p>Here's some of my work!</p>
+            </div>
+            <div class="project-container">
+                <div class="card">
+                    <div class="project-img-container">
+                        <img src="./images/ip_address_tracker.png" class="project-img">
+                    </div>
+                    <div class="project-description-container">
+                        <h2>IP Address tracker</h2>
+                        <p class="project-description-text">Remember seeing those TV "hackers" find a geolocation based on IP? Now you can too! A challenge from <a href="https://www.frontendmentor.io/" class="purple">Frontend Mentor</a> that integrates <a href="https://ipapi.co/" class="purple">ipapi</a> and <a href="https://leafletjs.com/" class="purple">Leaflet</a> APIs.</p>
+                        <h4>Technologies used:</h4>
+                        <div class="icon-container">
+                            <i class="fa-brands fa-html5 icon-link" title="HTML"></i>
+                            <i class="fa-brands fa-css3-alt icon-link" title="CSS"></i>
+                            <i class="fa-brands fa-square-js icon-link" title="Javascript"></i>
+                            <i class="fa-solid fa-gears icon-link" title="API"></i>
+                        </div>
+                        <div class="link-container">
+                            <a href="https://github.com/ichimon-nashi/frontendmentor-ip-tracker" target="_blank"  class="hover-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://ichimon-nashi.github.io/frontendmentor-ip-tracker/" target="_blank" class="hover-link"><i class="fas fa-link"></i> DEMO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="project-img-container">
+                        <img src="./images/url_shortener.png" class="project-img">
+                    </div>
+                    <div class="project-description-container">
+                        <h2>URL Shortener</h2>
+                        <p class="project-description-text">URLs too long? Not a problem anymore! This <a href="https://www.frontendmentor.io/" class="purple">Frontend Mentor</a> challenge makes use of the <a href="https://shrtco.de/" class="purple">shrtcode API</a> along with regex for email validation.</p>
+                        <h4>Technologies used:</h4>
+                        <div class="icon-container">
+                            <i class="fa-brands fa-html5 icon-link" title="HTML"></i>
+                            <i class="fa-brands fa-css3-alt icon-link" title="CSS"></i>
+                            <i class="fa-brands fa-square-js icon-link" title="Javascript"></i>
+                            <i class="fa-solid fa-gears icon-link" title="API"></i>
+                        </div>
+                        <div class="link-container">
+                            <a href="https://github.com/ichimon-nashi/frontendmentor-url-shortener" target="_blank" class="hover-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://ichimon-nashi.github.io/frontendmentor-url-shortener/" target="_blank" class="hover-link"><i class="fas fa-link"></i> DEMO</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="project-img-container">
+                        <img src="./images/travel_journal.png" class="project-img">
+                    </div>
+                    <div class="project-description-container">
+                        <h2>Travel Journal</h2>
+                        <p class="project-description-text">Travel journal created using React to import JSON data instead of hard-coding individual entries.</p>
+                        <div class="technology-container">
+                            <h4>Technologies used:</h4>
+                            <div class="icon-container">
+                                <i class="fa-brands fa-html5 icon-link" title="HTML"></i>
+                                <i class="fa-brands fa-css3-alt icon-link" title="CSS"></i>
+                                <i class="fa-brands fa-square-js icon-link" title="Javascript"></i>
+                                <i class="fa-brands fa-react icon-link" title="React"></i>
+                            </div>
+                        </div>
+                        <div class="link-container">
+                            <a href="https://github.com/ichimon-nashi/react-travel-journal" target="_blank" class="hover-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://ichimon-nashi.github.io/react-travel-journal/" target="_blank" class="hover-link"><i class="fas fa-link"></i> DEMO</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-heading">Contact</h2>
+            <p>I would love to hear from you!</p>
+            <!-- Formspree contact form -->
+            <form action="https://formspree.io/f/xknlznkk" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+                <div class="field-holder">
+                    <input 
+                        id="name" 
+                        type="name" 
+                        name="name"
+                        required
+                        placeholder="placeholder"
+                    >
+                    <label for="name">Name</label>
+                </div>
+                <div class="field-holder">
+                    <input 
+                        id="email"
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="placeholder"
+                    >
+                    <label for="email">Email</label>
+                </div>
+                <div class="field-holder">
+                    <textarea 
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="placeholder"
+                    ></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button id="submit-btn" type="submit">
+                    <i id="envelope-icon" class="fa-solid fa-envelope"></i>
+                    Send
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <h4>Eric Han</h4>
+            <a href="https://github.com/ichimon-nashi" target="_blank" class="link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hankengo/" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+<script src="./index.js"></script>
+<!-- Web3Forms API -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>

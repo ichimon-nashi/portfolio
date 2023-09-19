@@ -1,0 +1,437 @@
+/* General */
+:root {
+    --purple: rgb(145, 70, 255);
+    --blue: rgb(73, 122, 228);
+    --translucent-blue: rgba(57, 79, 244, 0.98);;
+    --gray: rgb(72, 98, 111);
+    --white: rgb(255, 255, 255);
+    --light-orange: rgba(248, 149, 77, 0.8);
+    --orange: rgb(250, 129, 40);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* outline: 0.1px dotted red; */
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("./images/watercolor_bg_multicolor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 21%;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.hover-link {
+    border: 1px solid var(--orange);
+    padding: 0.7rem;
+    display: inline-block;
+    background: linear-gradient(to left, var(--white) 50%, var(--light-orange) 50%) right;
+    background-size: 200%;
+    transition: .4s ease-out;
+}
+
+.hover-link:hover {
+    background-position: left;
+    color: var(--white);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-section {
+    min-height: 80lvh;
+    margin: 4rem 0rem;
+    padding-top: 5.5rem;
+    border-radius: 1rem;
+    color: var(--gray);
+}
+
+h2 {
+    font-size: 1.4rem;
+    padding: 0.8rem 0;
+}
+
+.section-heading {
+    color: var(--purple);
+    text-align: center;
+}
+
+p {
+    font-size: 0.9rem;
+    padding: 0.6rem 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: var(--translucent-blue);
+}
+
+.hamburger-icon {
+    color: var(--white);
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    display: none;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--orange);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.show-menu {
+    background: var(--translucent-blue);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0rem;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Hero */
+#hero {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#hero p {
+    margin-top: 2rem;
+}
+
+.learn-more-container {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+.learn-more-container i {
+    padding-right: 0.3rem;
+}
+
+h1 {
+    color: var(--gray);
+    font-size: 2.2rem;
+}
+
+/* About Me */
+#about {
+    text-align: center;
+}
+
+.profile-pic {
+    width: clamp(150px,40%,260px);
+}
+
+/* Projects */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+.projects-header {
+    text-align: center;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-description-container {
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+h4 {
+    color: var(--blue);
+    padding: 0.5rem 0;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.7rem;
+}
+
+.icon-link:hover {
+    color: var(--orange);
+}
+
+/* Contact */
+form {
+    margin-top: 1.8rem;
+}
+
+.field-holder {
+    position: relative;
+}
+
+input, textarea {
+    border: 0;
+    border-bottom: 2px solid #dfdfdf;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: text;
+}
+
+input, label, textarea {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    min-width: 100%;
+}
+
+textarea {
+    min-height: 10rem;
+}
+
+input:focus + label, textarea:focus + label {
+    color: var(--orange);
+    font-size: 0.6rem;
+    top: -0.8rem;
+    pointer-events: none;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid var(--orange);
+}
+
+input::placeholder, textarea::placeholder {
+    opacity: 0;
+}
+
+input:not(:placeholder-shown) ~ label, textarea:not(:placeholder-shown) ~ label {
+    display: none;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+button i {
+    margin-right: 0.3rem;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background: linear-gradient(176deg, rgba(236,175,253,1) 0%, rgba(179,195,254,1) 83%);
+}
+
+#footer i {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.link:hover {
+    color: var(--orange);
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    .portfolio-section {
+        min-height: 60lvh;
+        margin: 4rem 1.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    input, label, textarea {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+    input:focus + label, textarea:focus + label {
+        font-size: 0.9rem;
+        top: -1.3rem;
+    }
+    button {
+        font-size: 1.2rem;
+        padding: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #hero {
+        margin-top: 4rem;
+    }
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-description-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .navbar {
+        justify-content: initial;
+        width: 100%;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+    .nav-list {
+        position: initial;
+        width: initial;
+        width: 100%;
+        color: var(--grayish-violet);
+        display: flex;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 0;
+    }
+    .nav-item {
+        padding: 1.5rem 1rem;
+        width: initial;
+        display: inline-flex;
+    }
+    #hero {
+        margin-top: 5rem;
+    }
+    .profile-outer-container {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 0rem;
+    }
+    .profile-pic-container {
+        display: flex;
+        align-items: center;
+    }
+    .profile-pic {
+        width: 15rem;
+    }
+    .profile-text-container {
+        padding: 3rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .profile-outer-container {
+        padding: 1.5rem 2.5rem;
+    }
+    .profile-text-container {
+        padding: 4rem;
+    }
+    .project-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
